@@ -26,3 +26,6 @@ database.once('connected', () => {
 
 const routes = require('./routes/routes');
 app.use('/api', routes)
+
+const subjectroutes = require('./routes/subjectroute');
+app.use('/subject', subjectroutes)
